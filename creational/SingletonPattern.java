@@ -7,7 +7,7 @@ public class SingletonPattern {
     private SingletonPattern() {
     }
 
-    public static synchronized SingletonPattern getInstance() {
+    public static SingletonPattern getInstance() {
         if (instance == null) {
             synchronized (SingletonPattern.class) {
                 if (instance == null) {
